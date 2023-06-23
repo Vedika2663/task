@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="page">
+        <div class="left">
+    <ul>
+        <li><a href="#" onclick="display(1)">Home</a></li>
+        <li><a href="#" onclick="display(2)">Contact</a></li>
+        <li><a href="#" onclick="display(3)">Information</a></li>
+        <li><a href="#" onclick="display(4)">Guide</a></li>
+    </ul>
+</div>
+<div class="right">
+    <div id="home">
+        <h2>At Job Freak, we post daily updates on internships and job postings!
+         Our aim is to empower the youth of our country and make them self-dependent
+          by providing them with jobs/internships and all kinds of opportunities from various sectors.</h2>
+    </div>
+    <div id="contact">
+        <h2>contact at our email shyam_25@jobfreak.in</h2>
+    </div>
+    <div id="info">
+        <h2>Get Updates for Jobs and Internships openings from different companies</h2>
+    </div>
+    <div id="guide">
+        <h2>GUIDELINES FOR INTERNSHIP WITH THE COPYRIGHT OFFICE OF INDIA</h2>
+        <ul>
+            <li>To familiarize the interested and willing students of Law with the
+                provisions of Copyright Act and its application including registration
+                formalities & copyright policy.</li>
+                <li>Applicable to Indian National only</li>
+        </ul>
+    </div>
+</div>
+</div>
+<script>
+    function display(a){
+        switch (a) {
+            case 1:
+                document.getElementById("home").style.display="block"
+                document.getElementById("contact").style.display="none"
+                document.getElementById("info").style.display="none"
+                document.getElementById("guide").style.display="none"
+                break;
+            case 2:
+            document.getElementById("contact").style.display="block"
+            document.getElementById("home").style.display="none"
+                document.getElementById("info").style.display="none"
+                document.getElementById("guide").style.display="none"
+                break;
+            case 3:
+            document.getElementById("info").style.display="block"
+            document.getElementById("home").style.display="none"
+                document.getElementById("contact").style.display="none"
+                document.getElementById("guide").style.display="none"
+                break;
+                case 4:
+                document.getElementById("guide").style.display="block"
+                document.getElementById("home").style.display="none"
+                document.getElementById("contact").style.display="none"
+                document.getElementById("info").style.display="none"
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+</body>
+</html>
